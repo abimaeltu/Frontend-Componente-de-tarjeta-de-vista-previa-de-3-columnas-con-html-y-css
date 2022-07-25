@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+    
+}
+body{
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 15px;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    min-width: 375px;
+}
+main{
+    margin: 10px;
+    width: 20.44rem;
+}
+.container_card_1, .container_card_2, .container_card_3{
+    height: 27.75rem;
+    padding: 2.75rem;
+}
+.container_card_1{
+    background-color: var(--Bright-orange);
+    border-radius: 12px 12px 0 0;
+}
+.container_card_2{
+    background-color: var(--Dark-cyan);
+}
+.container_card_3{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 12px 12px;
+}
+
+.card_title{
+    color: var(--Very-light-gray-background-headings-buttons);
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+.parrafo{
+    color: var(--Transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    margin-bottom: 20px;
+}
+.boton_1, .boton_2, .boton_3{
+    border-radius: 2.5rem;
+    height: 3.12rem;
+    width: 10rem;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+}
+.boton_1{
+    color: var(--Bright-orange);
+}
+.boton_2{
+    color: var(--Dark-cyan);
+}
+.boton_3{
+    color: var(--Very-dark-cyan);
+}
+
+.boton_1:hover, .boton_2:hover, .boton_3:hover{
+    cursor: pointer;
+    color: var(--Very-light-gray-background-headings-buttons);
+    background-color: var(----);
+    border:solid 2px var(--Very-light-gray-background-headings-buttons);
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (min-width: 768px){
+    body{
+        font-size: 14px;
+    }
+    main{
+        display: flex;
+        width: 57.6rem;
+        height: 31.3rem;
+    }
+    .container_card_1{
+        background-color: var(--Bright-orange);
+        border-radius: 12px 0 0 12px;
+    }
+    .container_card_3{
+        background-color: var(--Very-dark-cyan);
+        border-radius: 0 12px 12px 0;
+    }
+}
